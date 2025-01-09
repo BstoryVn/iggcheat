@@ -1,12 +1,10 @@
 function so88() {
-    h5gg.clearResults();
-    h5gg.searchNumber('4333543704410193920', 'I64', '0x100000000', '0x160000000');
-    h5gg.searchNearby('0.01', 'F32', '0x8');
-    h5gg.searchNearby('0.0219~0.02975', 'F32', '0x32')
-    h5gg.searchNearby('0.1035~0.1070', 'F32', '0x4');
-    h5gg.searchNearby('2.802597e-45', 'F32', '0x4');
-    h5gg.searchNumber('0.1035~0.1070', 'F32', '0x100000000', '0x160000000');
-    h5gg.editAll('1.875', "F32");
+
+        h5gg.clearResults();
+        h5gg.searchNumber('914000001','I32','0x100000000', '0x200000000');
+        h5gg.editAll('914047001', 'I32'); 
+        h5gg.clearResults();
+
 }
 function m100() {
     h5gg.clearResults();
