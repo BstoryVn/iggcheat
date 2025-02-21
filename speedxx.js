@@ -14,17 +14,22 @@ function m100() {
 
 }
 
-function m101() {
-    h5gg.editAll('4366458311853765201', 'I64'); // Mã cho tốc độ siêu nhanh x50 (giá trị giả định)
-    alert('Enable Speed X8');
 
-
-}
 function m102() {
     h5gg.editAll('4397530849764387586', 'I64'); // Quay lại mã tốc độ bình thường
     alert('Remove Speed');
 
 
 }
+function m101(input)
+{
+ var m101 = document.getElementById('m101');
+    if (m101.checked) {
+    h5gg.editAll('4366458311853765201', 'I64');
+}
+else {
+    h5gg.editAll('4397530849764387586', 'I64');
 
+}
+}
 
