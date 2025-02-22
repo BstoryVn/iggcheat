@@ -32,4 +32,25 @@ else {
 
 }
 }
+document.addEventListener("DOMContentLoaded", function () {
+    var dragItem = document.getElementById("ayimgui");
+    var offsetX, offsetY, isDragging = false;
 
+    dragItem.addEventListener("mousedown", function (e) {
+        isDragging = true;
+        offsetX = e.clientX - dragItem.offsetLeft;
+        offsetY = e.clientY - dragItem.offsetTop;
+        dragItem.style.cursor = "grabbing"; // Change cursor when dragging
+    });
+
+    document.addEventListener("mousemove", function (e) {
+        if (!isDragging) return;
+        dragItem.style.left = e.clientX - offsetX + "px";
+        dragItem.style.top = e.clientY - offsetY + "px";
+    });
+
+    document.addEventListener("mouseup", function () {
+        isDragging = false;
+        dragItem.style.cursor = "grab"; // Reset cursor
+    });
+});
