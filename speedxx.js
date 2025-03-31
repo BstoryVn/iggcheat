@@ -14,6 +14,15 @@ function m100() {
 
 }
 
+function mod6() {
+    h5gg.clearResults();
+    h5gg.searchNumber('909000001','I32','0x100000000', '0x160000000');
+    h5gg.editAll('909035007', 'I32');
+
+    h5gg.clearResults();
+
+
+}
 
 function m102() {
     h5gg.editAll('4397530849764387586', 'I64'); // Quay lại mã tốc độ bình thường
